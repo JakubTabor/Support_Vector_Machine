@@ -5,3 +5,4 @@
 # Next i get my "SVC" model and use parameter "kernel" at "linear", then I train my model """classifier.fit(X_train, y_train)"""
 # Then I check predictions """print(classifier.predict(sc.transform([[30,87000]])))"""
 # Prepare "y_pred" with my "X_test" """y_pred = classifier.predict(X_test)""" and print it "reshape into columns for more clarity
+# """print(np.concatenate((y_pred.reshape(len(y_pred),1), y_test.reshape(len(y_test), 1)), 1))"""
